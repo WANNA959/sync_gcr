@@ -26,3 +26,14 @@ gcr.io/ml-pipeline/viewer-crd-controller:2.0.0-alpha.3
 gcr.io/ml-pipeline/visualization-server
 gcr.io/ml-pipeline/workflow-controller:v3.3.8-license-compliance
 gcr.io/tfx-oss-public/ml_metadata_store_server:1.5.0
+quay.io/argoproj/argocli:latest
+quay.io/argoproj/workflow-controller:latest
+quay.io/argoproj/argoexec:latest
+quay.io/dexidp/dex:v2.23.0
+quay.io/k8scsi/csi-node-driver-registrar:v1.2.0
+quay.io/datashim/csi-s3:latest-amd64
+quay.io/k8scsi/csi-attacher:v2.2.0
+quay.io/k8scsi/csi-provisioner:v2.0.2
+quay.io/jetstack/cert-manager-cainjector:v1.5.0
+quay.io/jetstack/cert-manager-controller:v1.5.0
+quay.io/jetstack/cert-manager-webhook:v1.5.0
