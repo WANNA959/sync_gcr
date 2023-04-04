@@ -17,7 +17,7 @@ def get_filename():
 
 
 def pull_image():
-    password = os.environ.get('DOCKER_PASSWORD')
+    password = os.environ.get('DOCKER_PASSWORD', '')
     name_list = get_filename()
     for name in name_list:
         if 'sha256' in name:
