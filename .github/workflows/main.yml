@@ -25,8 +25,9 @@ jobs:
         with:
           packages: |
             docker
-      env:
-        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-      - run: python sync_image.py
+      - name: "main"
+        env:
+          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        run: python sync_image.py
 
 
