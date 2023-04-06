@@ -28,6 +28,7 @@ jobs:
       - name: "main"
         env:
           DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+          DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
         run: python sync_image.py
 
 
