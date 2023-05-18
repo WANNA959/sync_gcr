@@ -1,1 +1,2 @@
-gcr.io/arrikto/istio/pilot:1.14.1-1-g19df463bb
+gcr.io/kubebuilder/kube-rbac-proxy:v0.13.0
+quay.io/ansible/awx-operator:2.2.1
