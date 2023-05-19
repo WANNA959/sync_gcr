@@ -1,2 +1,1 @@
-gcr.io/kubebuilder/kube-rbac-proxy:v0.13.0
-quay.io/ansible/awx-operator:2.2.1
+quay.io/coreos/flannel:v0.9.1-amd64
