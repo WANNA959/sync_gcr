@@ -15,6 +15,7 @@ password = os.environ.get('DOCKER_PASSWORD', '')
 namespace = os.environ.get('DOCKER_NS', '')
 
 
+
 def pull_image():
 
     name_list = get_filename()
