@@ -27,7 +27,7 @@ def pull_image():
             subprocess.call("docker pull {}".format(name), shell=True)
             subprocess.run(["docker", "tag", name, image])
             subprocess.call(
-                "docker login -u {0} -p {1}".format(username, password), shell=True)
+                "docker login -u {0} -p {1} registry.cn-hangzhou.aliyuncs.com".format(username, password), shell=True)
             subprocess.call("docker push {}".format(image), shell=True)
         else:
             new_name = username+"/" + name.split("/")[-1]
