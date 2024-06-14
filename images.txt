@@ -1,1 +1,1 @@
-registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.8.0
+openebs/zfs-driver:2.5.0
