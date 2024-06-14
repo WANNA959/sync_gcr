@@ -39,5 +39,6 @@ def pull_image():
             subprocess.call("docker push {}".format(new_name), shell=True)
 
 
+
 if __name__ == "__main__":
     pull_image()
