@@ -1,1 +1,10 @@
 openebs/zfs-driver:2.5.0
+registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.8.0
+docker.io/calico/cni:v3.24.5
+docker.io/calico/kube-controllers:v3.24.5
+openebs/provisioner-localpv:4.0.0
+registry.k8s.io/sig-storage/csi-resizer:v1.8.0
+registry.k8s.io/sig-storage/csi-snapshotter:v6.2.2
+registry.k8s.io/sig-storage/snapshot-controller:v6.2.2
+registry.k8s.io/sig-storage/csi-provisioner:v3.5.0
+openebs/lvm-driver:1.5.0
