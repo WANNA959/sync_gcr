@@ -23,14 +23,14 @@ def pull_image():
             sha256_name = name.split("@")
             new_name = sha256_name[0].split("/")[-1]
             tag = sha256_name[-1].split(":")[-1][0:6]
-            image = "{0}/{1}:{2}".format(username, new_name, tag)
+            image = "registry.cn-hangzhou.aliyuncs.com/{0}/{1}:{2}".format(username, new_name, tag)
             subprocess.call("docker pull {}".format(name), shell=True)
             subprocess.run(["docker", "tag", name, image])
             subprocess.call(
                 "docker login -u {0} -p {1} registry.cn-hangzhou.aliyuncs.com".format(username, password), shell=True)
             subprocess.call("docker push {}".format(image), shell=True)
         else:
-            new_name = username+"/" + name.split("/")[-1]
+            new_name = "registry.cn-hangzhou.aliyuncs.com" + "/" + username+"/" + name.split("/")[-1]
             subprocess.call("docker pull {}".format(name), shell=True)
             subprocess.run(["docker", "tag", name, new_name])
             subprocess.call(
